@@ -22,7 +22,7 @@
     <label for="firstName">First Name:</label>
     <input id="firstName" type="text" bind:value={firstName} />
 
-	<label for="lastName">Last Name:</label>
+    <label for="lastName">Last Name:</label>
     <input id="lastName" type="text" bind:value={lastName} />
 
     <p>{$t('Welcome $firstName $lastName', { firstName, lastName })}</p>

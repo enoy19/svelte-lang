@@ -1,5 +1,4 @@
 import { setupI18n } from '$lib/i18n/index.js';
-import { get } from 'svelte/store';
 import { de } from './translations/de.js';
 import { en } from './translations/en.js';
 
