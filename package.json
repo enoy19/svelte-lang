@@ -2,6 +2,25 @@
   "name": "svelte-lang",
   "version": "1.0.0",
   "license": "MIT",
+  "author": {
+    "name": "enoy19",
+    "url": "https://github.com/enoy19"
+  },
+  "description": "svelte-lang is an i18n library for Svelte that simplifies multilingual support. It offers a straightforward API for managing translations, supports parameterized strings, and integrates with Svelte stores for reactive language handling. Features include automatic language detection and persistence, making it easy to build global applications.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enoy19/svelte-lang.git"
+  },
+  "keywords": [
+    "svelte",
+    "sveltekit",
+    "i18n",
+    "internationalization",
+    "localization",
+    "l10n",
+    "multilingual",
+    "svelte-library"
+  ],
   "scripts": {
     "dev": "vite dev",
     "build": "vite build && npm run package",
