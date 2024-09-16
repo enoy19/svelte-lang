@@ -4,5 +4,5 @@ export const en = {
   app: t`svelte-lang`,
 
   'Something went wrong': t`Something went wrong`,
-  'Welcome $name': t`Welcome ${p('name')}`
+  'Welcome $firstName $lastName': t`Welcome ${p('firstName')} ${p('lastName')}`
 } as const;

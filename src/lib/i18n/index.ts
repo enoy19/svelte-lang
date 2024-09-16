@@ -7,7 +7,7 @@ export function p<T extends string>(name: T) {
 
 type ParamPlaceholder = ReturnType<typeof p>;
 
-export function t<T extends ParamPlaceholder>(strings: TemplateStringsArray, ...values: T[]) {
+export function t<T extends ParamPlaceholder[]>(strings: TemplateStringsArray, ...values: T) {
   return { strings, values } as const;
 }
 

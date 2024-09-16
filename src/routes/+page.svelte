@@ -1,9 +1,10 @@
 <script lang="ts">
   import { language, supportedLanguages, t, tUnsafe } from '$lib/example/i18n/index.js';
 
-  let name = 'Peter';
+  let firstName = 'John';
+  let lastName = 'Doe';
   let unsafeKey = 'app';
-  let inlineParamsKey = 'Welcome $name({"name": "John"})';
+  let inlineParamsKey = 'Welcome $firstName $lastName({"firstName": "John", "lastName": "Doe"})';
 </script>
 
 <main>
@@ -18,10 +19,13 @@
   </div>
 
   <div>
-    <label for="name">Name:</label>
-    <input id="name" type="text" bind:value={name} />
+    <label for="firstName">First Name:</label>
+    <input id="firstName" type="text" bind:value={firstName} />
 
-    <p>{$t('Welcome $name', { name })}</p>
+	<label for="lastName">Last Name:</label>
+    <input id="lastName" type="text" bind:value={lastName} />
+
+    <p>{$t('Welcome $firstName $lastName', { firstName, lastName })}</p>
   </div>
 
   <div>
